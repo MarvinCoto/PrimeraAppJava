@@ -20,7 +20,11 @@ public class PrimerAplicacionMarvin {
         sumar(2, 8);
         
         System.out.println("El resultado de la suma es: " + sumar(2, 5));
+        
     }
+    
+    //Creamos un objeto de la clase persona
+        Persona objPersona = new Persona("Marvin");
     
     //métodos y funciones
     public static void saludar(){
@@ -38,6 +42,25 @@ public class PrimerAplicacionMarvin {
     public static int sumar(int num1, int num2){
         int resultado = (num1 + num2);
         return resultado;
+    }
+    
+    //Clases
+    class Persona{
+    
+        String nombre;
+        double altura;
+        String nacionalidad;
+        
+        //constructores
+        public Persona(String nombre, double altura){
+            this.nombre = nombre;
+            this.altura = altura;
+        }
+        
+        public Persona(String nombre){
+            this.nombre = nombre;
+        }
+        
     }
     
 }
